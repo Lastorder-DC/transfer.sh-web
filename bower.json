@@ -16,7 +16,7 @@
     "videojs": "~8.16.1",
     "bootstrap": "~3.0.0",
     "modernizr": "~3.5.0",
-    "uri.js": "~4.4.1",
+    "uri.js": "~1.19.11",
     "typed.js": "https://github.com/mattboldt/typed.js.git",
     "realistic-typewriter.js": "https://github.com/fardjad/realistic-typewriter.js.git",
     "animate.less": "*",
