@@ -2,7 +2,7 @@ name: Build and update web dist folder
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "feature/updatedep" ]
   pull_request:
     branches: [ "master" ]
 
