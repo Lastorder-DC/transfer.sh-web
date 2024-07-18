@@ -1,0 +1,34 @@
+name: Build and update web dist folder
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v4
+      with:
+        ref: ${{ github.head_ref }}
+        token: ${{ secrets.GH_PAT || github.token }}
+
+    - name: Use Node.js v10.24.1
+      uses: actions/setup-node@v3
+      with:
+        node-version: lts/dubnium
+
+    - name: Build
+      run: |
+        npm install
+        npm -g install bower
+        bower install
+        grunt build
+    - name: Update dist
+      run: |
+        git add dist
+        git commit -m "Update dist for ${{ github.head_ref }}"
+        git push
