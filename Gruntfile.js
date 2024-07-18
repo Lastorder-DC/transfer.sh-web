@@ -31,13 +31,11 @@ module.exports = function (grunt) {
                     fonts: [
                         {
                             family: 'Noto Sans Korean',
-                            styles: [200, 300],
-                            subsets: ['latin', 'greek', 'cyrillic']
+                            styles: [200, 300]
                         },
                         {
                             family: 'Nanum Gothic Coding',
-                            styles: [400],
-                            subsets: ['latin', 'greek', 'cyrillic']
+                            styles: [400]
                         },
                     ]
                 }
