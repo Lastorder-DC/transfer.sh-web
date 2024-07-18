@@ -16,14 +16,10 @@ jobs:
         ref: ${{ github.head_ref }}
         token: ${{ secrets.GH_PAT || github.token }}
 
-    - name: Use Node.js v10.24.1
-      uses: actions/setup-node@v3
+    - name: Use Node.js lts/iron
+      uses: actions/setup-node@v4
       with:
-        node-version: lts/dubnium
-
-    - name: Remove old dist folder
-      run: |
-        rm -rfv dist
+        node-version: lts/iron
 
     - name: Build
       run: |
