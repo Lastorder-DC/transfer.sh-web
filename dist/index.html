@@ -9,8 +9,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{.Hostname}} - Easy and fast file sharing from the command-line.</title>
-    <meta name="description" content="Easy and fast file sharing from the command-line.">
+    <title>{{.Hostname}} - 명령줄에서 쉽고 빠르게 파일 공유하기</title>
+    <meta name="description" content="명령줄에서 쉽고 빠르게 파일 공유하기">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <link rel="stylesheet" href="styles/main.css">
@@ -49,11 +49,11 @@
                 <h1>{{.Hostname}}</h1>
             </a>
             <ul class="hidden-xs">
-                <li><a href="#">home</a>
+                <li><a href="#">홈</a>
                 </li>
-                <li><a href="#samples">sample use cases</a>
+                <li><a href="#samples">사용 예시</a>
                 </li>
-                <li><a href="#contact">contact us</a>
+                <li><a href="#contact">문의하기</a>
                 </li>
             </ul>
         </div>
@@ -62,14 +62,14 @@
 <section id="home">
     <div class="wrapper">
         <h2 class="page-title">
-            Easy file sharing from the command line</h2>
+            명령줄에서 쉽고 빠르게 파일 공유하기</h2>
         <div class="row animated fadeInDown">
             <div id="from-terminal" class="box col-md-8 col-md-offset-2 col-xs-12">
                 <div class="terminal-top">
 
                 </div>
                 <div id="terminal" class="terminal">
-                    <code class="code-wrapper"><span class="code-title"># Upload using cURL</span>
+                    <code class="code-wrapper"><span class="code-title"># cURL을 이용하여 업로드</span>
                         $ curl --upload-file ./hello.txt {{.WebAddress}}hello.txt
                         {{.WebAddress}}{{.SampleToken}}/hello.txt
 
@@ -81,8 +81,8 @@
                 </div>
                 <div id="web">
                     <code class="code-wrapper">
-                        <span class="code-title"># Upload from web</span>
-                        Drag your files here, or <a class="browse" href="#"> click to browse.</a>
+                        <span class="code-title"># 웹에서 업로드</span>
+                        이곳에 파일을 드래그하거나 <a class="browse" href="#">이곳을 클릭하여 파일 열기.</a>
                     </code>
                     <input type="file" multiple="multiple" style='display: none;' />
                     <ul class='queue'>
@@ -92,7 +92,7 @@
                     <div class='all-files'>
                         <br>
                         <div>
-                            <span class="code-title"># Download all your files</span>
+                            <span class="code-title"># 업로드한 모든 파일 다운로드하기</span>
                             <br/>
                             <br/>
                             <a class="download-zip btn-cta" href="#">zip</a> <a class="download-tar btn-cta" href="#">tar.gz</a>
@@ -102,7 +102,7 @@
             </div>
 
             <div>
-                <a href="#features" class="btn-cta btn-home">learn more</i> </a>
+                <a href="#features" class="btn-cta btn-home">더 알아보기</i> </a>
             </div>
         </div>
 </section>
@@ -114,41 +114,41 @@
         <div class="row  animated fadeInDown ">
             <div class="col-md-3 col-xs-6">
                 <i class="icon-terminal"></i>
-                <h3>Made for use with shell</h3>
+                <h3>쉘에서 사용하기 편하도록 만들어짐</h3>
             </div>
             <div class="col-md-3 col-xs-6">
                 <i class="icon-link"></i>
-                <h3>Share files with a URL</h3>
+                <h3>파일을 주소로 공유하기</h3>
             </div>
             <div class="col-md-3 col-xs-6">
                 <i class="icon-database"></i>
                 {{ if .MaxUploadSize }}
-                <h3>Upload up to {{ .MaxUploadSize }}</h3>
+                <h3>최대 {{ .MaxUploadSize }}까지 업로드</h3>
                 {{ else }}
-                <h3>Unlimited upload</h3>
+                <h3>제한 없는 업로드</h3>
                 {{ end }}
             </div>
             <div class="col-md-3 col-xs-6">
                 <i class="icon-clock"></i>
                 {{ if .PurgeTime }}
-                <h3>Files stored for {{ .PurgeTime }}</h3>
+                <h3>파일 보관 기한 - {{ .PurgeTime }}</h3>
                 {{ else }}
-                <h3>Files stored forever</h3>
+                <h3>파일은 영원히 보관됨</h3>
                 {{ end }}
             </div>
         </div>
         <div class="row  animated fadeInDown">
             <div class="col-md-offset-3 col-md-3 col-xs-6">
                 <i class="icon-tag"></i>
-                <h3>For free</h3>
+                <h3>무료로 이용 가능</h3>
             </div>
             <div class="col-md-3 col-xs-6">
                 <i class="icon-lock"></i>
-                <h3>Encrypt your files</h3>
+                <h3>파일 암호화하기</h3>
             </div>
             <div class="col-md-3 col-xs-6">
                 <i class="icon-lock"></i>
-                <h3>Maximize amount of downloads</h3>
+                <h3>다운로드 수 최대화하기</h3>
             </div>
         </div>
     </div>
@@ -156,7 +156,7 @@
 
 <section id="share">
     <div class="wrapper">
-        <h2 class="page-title">Preview your files in the browser!</h2>
+        <h2 class="page-title">브라우저에서 파일을 미리 보세요!</h2>
     </div>
 
 </section>
@@ -164,16 +164,16 @@
 <section id="samples">
     <div class="wrapper">
         <h2 class="page-title">
-            Sample use cases
+            사용 예시
         </h2>
         <div class="row">
             <div class="col-md-6 ">
-                <h3>How to upload</h3>
+                <h3>업로드하는 방법</h3>
                 <div class="terminal-top">
 
                 </div>
                 <div class="terminal">
-                    <code class="code-wrapper"><span class="code-title"># Uploading is easy using curl</span>
+                    <code class="code-wrapper"><span class="code-title"># curl을 사용하여 업로드</span>
                         $ curl --upload-file ./hello.txt {{.WebAddress}}hello.txt
                     {{.WebAddress}}{{.SampleToken}}/hello.txt
 
@@ -186,14 +186,14 @@
                 </div>
             </div>
             <div class="col-md-6 ">
-                <h3>Add shell function to .bashrc or .zshrc</a></h3>
+                <h3>.bashrc나 .zshrc에 쉘 함수 추가</a></h3>
                 <div class="terminal-top">
                 </div>
                 <div class="terminal">
-                    <code class="code-wrapper"><span class="code-title"># Add this to .bashrc or .zshrc or its equivalent</span>
+                    <code class="code-wrapper"><span class="code-title"># 아래 내용을 .bashrc, .zshrc나 비슷한 역할을 하는 파일에 추가하세요</span>
                         transfer(){ if [ $# -eq 0 ];then echo &quot;No arguments specified.\nUsage:\n  transfer &lt;file|directory&gt;\n  ... | transfer &lt;file_name&gt;&quot;&gt;&amp;2;return 1;fi;if tty -s;then file=&quot;$1&quot;;file_name=$(basename &quot;$file&quot;);if [ ! -e &quot;$file&quot; ];then echo &quot;$file: No such file or directory&quot;&gt;&amp;2;return 1;fi;if [ -d &quot;$file&quot; ];then file_name=&quot;$file_name.zip&quot; ,;(cd &quot;$file&quot;&amp;&amp;zip -r -q - .)|curl --progress-bar --upload-file &quot;-&quot; &quot;{{.WebAddress}}$file_name&quot;|tee /dev/null,;else cat &quot;$file&quot;|curl --progress-bar --upload-file &quot;-&quot; &quot;{{.WebAddress}}$file_name&quot;|tee /dev/null;fi;else file_name=$1;curl --progress-bar --upload-file &quot;-&quot; &quot;{{.WebAddress}}$file_name&quot;|tee /dev/null;fi;echo "";}
 
-                        <span class="code-title"># Now you can use transfer function</span>
+                        <span class="code-title"># 이제 transfer 함수를 사용할 수 있습니다</span>
                         $ transfer hello.txt
                     </code>
                 </div>
@@ -201,19 +201,19 @@
         </div>
 
 
-        <a class="btn-cta" data-target="#coll" data-toggle="collapse">More examples</a>
+        <a class="btn-cta" data-target="#coll" data-toggle="collapse">더 많은 예시</a>
 
         <div class="collapse " id="coll">
             <div class="row">
                 <div class="col-md-6 ">
-                    <h3>Upload multiple files at once</h3>
+                    <h3>여러 파일을 한번에 업로드</h3>
                     <div class="terminal-top">
                     </div>
                     <div class="terminal">
                         <code class="code-wrapper">
                             $ curl -i -F filedata=@/tmp/hello.txt -F filedata=@/tmp/hello2.txt {{.WebAddress}}
 
-                            <span class="code-title"># Combining downloads as zip or tar archive</span>
+                            <span class="code-title"># 여러 파일을 zip이나 tar 압축 파일로 다운로드</span>
                             $ curl {{.WebAddress}}({{.SampleToken}}/hello.txt,{{.SampleToken2}}/world.txt).tar.gz
                             $ curl {{.WebAddress}}({{.SampleToken}}/hello.txt,{{.SampleToken2}}/world.txt).zip
                         </code>
@@ -222,14 +222,14 @@
 
                 </div>
                 <div class="col-md-6 ">
-                    <h3>Encrypt your files with gpg before the transfer</h3>
+                    <h3>업로드 전 gpg로 파일 암호화</h3>
                     <div class="terminal-top">
                     </div>
                     <div class="terminal">
-                        <code class="code-wrapper"><span class="code-title"># Encrypt files with password using gpg</span>
+                        <code class="code-wrapper"><span class="code-title"># 파일을 gpg를 사용해 암호화</span>
                             $ cat /tmp/hello.txt|gpg -ac -o-|curl -X PUT --upload-file "-" {{.WebAddress}}test.txt
 
-                            <span class="code-title"># Download and decrypt</span>
+                            <span class="code-title"># 다운로드 받아서 복호화</span>
                             $ curl {{.WebAddress}}{{.SampleToken}}/test.txt|gpg -o- > /tmp/hello.txt
                         </code>
                     </div>
@@ -238,11 +238,11 @@
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <h3>Scan for malware</h3>
+                    <h3>바이러스 검사</h3>
                     <div class="terminal-top">
                     </div>
                     <div class="terminal">
-                        <code class="code-wrapper"><span class="code-title"># Scan for malware or viruses using Clamav</span>
+                        <code class="code-wrapper"><span class="code-title"># Clamav로 바이러스 검사 후 업로드</span>
                             $ wget http://www.eicar.org/download/eicar.com
                             $ curl -X PUT --upload-file ./eicar.com {{.WebAddress}}eicar.com/scan
 
@@ -422,7 +422,7 @@ goto main
 
 <section id="share">
     <div class="wrapper">
-        <h2 class="page-title">Follow on GitHub</h2>
+        <h2 class="page-title">GitHub에서 팔로우</h2>
         <br>
         <br>
 
@@ -444,7 +444,7 @@ goto main
 
 <footer>
     <div class="wrapper">
-        <p>Originally Made with <i class="icon-heart"></i> by <a href="https://github.com/dutchcoders" title="Dutch Coders">Dutch Coders</a></p>
+        <p>Originally made with <i class="icon-heart"></i> by <a href="https://github.com/dutchcoders" title="Dutch Coders">Dutch Coders</a></p>
         <p>Server provided by <a href="https://github.com/Lastorder-DC" title="Lastorder-DC">Lastorder-DC</a></p>
     </div>
 
