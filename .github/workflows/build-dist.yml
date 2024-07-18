@@ -29,6 +29,8 @@ jobs:
         grunt build
     - name: Update dist
       run: |
+        git config --global user.email "18280396+Lastorder-DC@users.noreply.github.com"
+        git config --global user.name "Lastorder-DC BuildBot"
         git add dist
         git commit -m "Update dist for ${{ github.head_ref }}"
         git push
