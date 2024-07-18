@@ -14,7 +14,7 @@
   ],
   "dependencies": {
     "videojs": "~8.16.1",
-    "bootstrap": "~5.3.3",
+    "bootstrap": "~3.4.0",
     "modernizr": "~3.5.0",
     "uri.js": "~1.19.11",
     "typed.js": "https://github.com/mattboldt/typed.js.git",
