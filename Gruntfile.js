@@ -30,7 +30,7 @@ module.exports = function (grunt) {
                     cssFile: 'dist/fonts/fonts.css',
                     fonts: [
                         {
-                            family: 'Noto Sans Korean',
+                            family: 'Gothic A1',
                             styles: [200, 300]
                         },
                         {
