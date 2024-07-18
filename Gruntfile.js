@@ -30,12 +30,12 @@ module.exports = function (grunt) {
                     cssFile: 'dist/fonts/fonts.css',
                     fonts: [
                         {
-                            family: 'Source Sans Pro',
+                            family: 'Noto Sans Korean',
                             styles: [200, 300],
                             subsets: ['latin', 'greek', 'cyrillic']
                         },
                         {
-                            family: 'Droid Sans Mono',
+                            family: 'Nanum Gothic Coding',
                             styles: [400],
                             subsets: ['latin', 'greek', 'cyrillic']
                         },

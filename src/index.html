@@ -46,7 +46,7 @@ include "includes/navigation.html"
                         $ curl --upload-file ./hello.txt {{.WebAddress}}hello.txt
                         {{.WebAddress}}{{.SampleToken}}/hello.txt
 
-                        <span class="code-title"># Using the shell function</span>
+                        <span class="code-title"># 쉘 함수를 이용하여 업로드</span>
                         $ transfer hello.txt
                         ##################################################### 100.0%
                         {{.WebAddress}}{{.SampleToken2}}/hello.txt
@@ -87,7 +87,7 @@ include "includes/navigation.html"
         <div class="row  animated fadeInDown ">
             <div class="col-md-3 col-xs-6">
                 <i class="icon-terminal"></i>
-                <h3>쉘에서 사용하기 편하도록 만들어짐</h3>
+                <h3>쉘에서 사용하기 편리</h3>
             </div>
             <div class="col-md-3 col-xs-6">
                 <i class="icon-link"></i>
@@ -113,15 +113,11 @@ include "includes/navigation.html"
         <div class="row  animated fadeInDown">
             <div class="col-md-offset-3 col-md-3 col-xs-6">
                 <i class="icon-tag"></i>
-                <h3>무료로 이용 가능</h3>
+                <h3>평생 무료</h3>
             </div>
             <div class="col-md-3 col-xs-6">
                 <i class="icon-lock"></i>
-                <h3>파일 암호화하기</h3>
-            </div>
-            <div class="col-md-3 col-xs-6">
-                <i class="icon-lock"></i>
-                <h3>다운로드 수 최대화하기</h3>
+                <h3>암호화된 파일 지원</h3>
             </div>
         </div>
     </div>
@@ -131,7 +127,6 @@ include "includes/navigation.html"
     <div class="wrapper">
         <h2 class="page-title">브라우저에서 파일을 미리 보세요!</h2>
     </div>
-
 </section>
 
 <section id="samples">
@@ -225,18 +220,18 @@ include "includes/navigation.html"
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h3>Backup mysql database, encrypt and transfer</h3>
+                    <h3>MySQL 데이터베이스를 백업, 암호화해서 업로드</h3>
                     <div class="terminal-top">
                     </div>
                     <div class="terminal">
-                        <code class="code-wrapper"><span class="code-title"># Backup, encrypt and transfer</span>
+                        <code class="code-wrapper"><span class="code-title"># 백업, 암호화하고 업로드</span>
                             $ mysqldump --all-databases|gzip|gpg -ac -o-|curl -X PUT --upload-file "-" {{.WebAddress}}test.txt</code>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <h3>Send email with transfer link (uses shell function)</h3>
+                    <h3>업로드한 링크를 메일로 전송 (쉘 함수 이용)</h3>
                     <div class="terminal-top">
                     </div>
                     <div class="terminal">
@@ -338,7 +333,7 @@ include "includes/navigation.html"
 
             <div class="row">
                 <div class="col-md-6">
-                    <h3>Upload a file or directory in Windows</h3>
+                    <h3>윈도우에서 파일이나 폴더 업로드</h3>
                     <div class="terminal-top">
                     </div>
                     <div class="terminal">
@@ -380,11 +375,11 @@ goto main
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h3>Send us your awesome example</h3>
+                    <h3>사용 예제를 보내주세요</h3>
                     <div class="terminal-top">
                     </div>
                     <div class="terminal">
-                        <code class="code-wrapper"><span class="code-title"># Your awesome sample will be put here</span>
+                        <code class="code-wrapper"><span class="code-title"># 보내주신 사용 예제는 이곳에 업로드됩니다.</span>
                         </code>
                     </div>
                 </div>
@@ -399,7 +394,7 @@ goto main
         <br>
         <br>
 
-        <a class="github-button" href="https://github.com/dutchcoders" data-size="large" data-show-count="true" aria-label="Follow @dutchcoders on GitHub">Follow @dutchcoders</a>
+        <a class="github-button" href="https://github.com/dutchcoders" data-size="large" data-show-count="true" aria-label="GitHub에서 @dutchcoders 팔로우">@dutchcoders 팔로우</a>
         <a class="github-button" href="https://github.com/dutchcoders/transfer.sh" data-size="large" data-show-count="true" aria-label="Star dutchcoders/transfer.sh on GitHub">Star</a>
     </div>
 </section>
@@ -408,9 +403,9 @@ goto main
     <div class="wrapper">
         <i class="icon-mail"></i>
         <h2 class="page-title">
-            Any questions?
+            질문이 있으신가요?
         </h2>
-        <a href="mailto:{{.EmailContact}}" data-uv-trigger class="btn-cta">Contact us</a>
+        <a href="mailto:{{.EmailContact}}" data-uv-trigger class="btn-cta">문의하기</a>
     </div>
 </section>
 
